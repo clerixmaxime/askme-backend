@@ -1,0 +1,21 @@
+db:
+  build: database/
+  dockerfile: database.dockerfile
+  environment:
+    - MYSQL_ROOT_PASSWORD=pass
+  #volumes:
+    # database folder location
+# development
+# - ./database/storage:/var/lib/mysql
+# deployment
+# - /opt/sites/presenter-feedback/database:/var/lib/mysql
+
+backend:
+    build: .
+    environment:
+      # - NODE_ENV=debug
+    dockerfile: backend.dockerfile
+    links:
+      - db
+    ports:
+      - "8081:8081"
