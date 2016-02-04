@@ -1,14 +1,15 @@
 {
-  "name": "question-app-backend",
+  "name": "presetner-feedback-backend",
   "version": "1.0.1",
-  "description": "",
-  "main": "api/index.js",
+  "description": "Backend part of the presenter-feedback app",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"Please use docker-compose to run the app.\""
   },
   "repository": {
     "type": "git",
-    "url": "git@innersource.accenture.com:taw2013/question-app.git"
+    "url": "git@uat.alm.accenture.com/liq/presenter-feedback-backend.git"
   },
   "author": "",
   "license": "ISC",

@@ -5,14 +5,12 @@ db:
     - MYSQL_ROOT_PASSWORD=pass
   #volumes:
     # database folder location
-# development
-# - ./database/storage:/var/lib/mysql
-# deployment
-# - /opt/sites/presenter-feedback/database:/var/lib/mysql
+    # development
+    # - ./database/storage:/var/lib/mysql
 
 backend:
     build: .
-    environment:
+    #environment:
       # - NODE_ENV=debug
     dockerfile: backend.dockerfile
     links:
