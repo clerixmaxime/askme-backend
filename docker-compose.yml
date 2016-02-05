@@ -16,6 +16,6 @@ backend:
     #environment:
     # - NODE_ENV=debug
     links:
-      - db
+      - db:db
     ports:
       - "8081:8081"
