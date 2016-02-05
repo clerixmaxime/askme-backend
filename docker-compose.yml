@@ -1,6 +1,7 @@
 db:
   build: database/
   dockerfile: database.dockerfile
+  container_name: presenter-feedback-db
   environment:
     - MYSQL_ROOT_PASSWORD=pass
   #volumes:
@@ -10,9 +11,10 @@ db:
 
 backend:
     build: .
-    #environment:
-      # - NODE_ENV=debug
     dockerfile: backend.dockerfile
+    container_name: presenter-feedback-backend
+    #environment:
+    # - NODE_ENV=debug
     links:
       - db
     ports:
