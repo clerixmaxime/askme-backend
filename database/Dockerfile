@@ -1,5 +1,3 @@
-# Dockerfile for Question app
-
 FROM mysql
 
 # Make a folder for our backend
