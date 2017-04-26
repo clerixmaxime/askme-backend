@@ -1,5 +1,3 @@
-# Dockerfile for Presenter feedback backend
-
 FROM node:4.2.3
 
 # Make a folder for our backend
