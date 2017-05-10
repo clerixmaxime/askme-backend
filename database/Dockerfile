@@ -1,4 +1,4 @@
-FROM mysql
+FROM docker.io/mysql
 
 # Make a folder for our backend
 # RUN mkdir /app
