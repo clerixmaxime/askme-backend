@@ -4,6 +4,6 @@ FROM registry.access.redhat.com/rhscl/mysql-57-rhel7
 # RUN mkdir /app
 
 # Attach backend to container
-ADD ./questions.sql .
+COPY ./questions.sql /var/lib/mysql/questions.sql
 
 EXPOSE 3306
