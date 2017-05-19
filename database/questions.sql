@@ -30,7 +30,6 @@ CREATE TABLE IF NOT EXISTS `uuid_rating` (
     PRIMARY KEY (`uuid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE USER 'questions'@'%' IDENTIFIED BY 'x2YfU8vHqAATS7Sh';
 GRANT ALL PRIVILEGES ON questions.* TO 'questions'@'%';
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
