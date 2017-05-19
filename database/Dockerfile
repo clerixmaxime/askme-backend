@@ -4,8 +4,6 @@ FROM registry.access.redhat.com/rhscl/mysql-57-rhel7
 # RUN mkdir /app
 
 # Attach backend to container
-ADD ./questions.sql /docker-entrypoint-initdb.d
-
-ENV MYSQL_ROOT_PASSWORD pass
+ADD ./questions.sql .
 
 EXPOSE 3306
